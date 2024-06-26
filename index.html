@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form action="https://ttvttv.github.io/" method="post" target="_blank">
+        <fieldset class="fieldset">
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="off" required>
+            
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" autocomplete="off" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <legend>Encuesta</legend>
+            <p>¿Qué puntuación darías a esta página?</p>
+            <div class="options">
+                <label><input type="radio" name="puntuacion" value="1" required> 1</label>
+                <label><input type="radio" name="puntuacion" value="2"> 2</label>
+                <label><input type="radio" name="puntuacion" value="3"> 3</label>
+                <label><input type="radio" name="puntuacion" value="4"> 4</label>
+                <label><input type="radio" name="puntuacion" value="5"> 5</label>
+            </div>
+            
+            <p>¿Qué apartados te gustaría añadir a esta página?</p>
+            <div class="options">
+                <label><input type="checkbox" name="apartados[]" value="Blog"> Blog</label>
+                <label><input type="checkbox" name="apartados[]" value="Fotos"> Fotos</label>
+                <label><input type="checkbox" name="apartados[]" value="Redes Sociales"> Redes Sociales</label>
+                <label><input type="checkbox" name="apartados[]" value="Música"> Música</label>
+                <label><input type="checkbox" name="apartados[]" value="Noticias"> Noticias</label>
+            </div>
+        </fieldset>
+
+        <div class="button-container">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </div>
+    </form>
+</body>
+</html>
